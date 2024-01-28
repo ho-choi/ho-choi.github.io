@@ -23,3 +23,4 @@ PID(Proportional, Integral, Derivative) 제어는 피드백 시스템에서 사�
 
 ###  Proportional 
 
+dsdfdf
