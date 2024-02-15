@@ -1,14 +1,14 @@
 ---
 layout: single
-title: "[HD_Map] Data 분석 - 진행중" 
-categories: HD_Map
+title: "[AI_robot] PID 제어 - 진행중" 
+categories: AI_robot
 typora-root-url: ../
 toc: true
 ---
 
 
 
-## ## PID 제어란
+## PID 제어란
 
 PID(Proportional, Integral, Derivative) 제어는 피드백 시스템에서 사용되는 제어 알고리즘으로, 원하는 목표값과 현재 상태의 차이를 이용하여 시스템을 조절하는 데 사용됩니다. PID 제어는 선형 시스템 및 비선형 시스템에서 널리 사용되며, 많은 제어 시스템에서 적용됩니다.
 
@@ -23,4 +23,3 @@ PID(Proportional, Integral, Derivative) 제어는 피드백 시스템에서 사�
 
 ###  Proportional 
 
-dsdfdf
