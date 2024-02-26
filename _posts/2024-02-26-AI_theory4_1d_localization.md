@@ -14,7 +14,7 @@ use_math: true
 실제 베이시안 필터를 이용해서 localization 하는 방법을 정리하고자 한다.  앞선 글에서 정리했듯이 Likelihood와 Prior를 곱한다면, Posterior을 구할 수 있는 것을 확인했습니다. 
 
 <center>$
-P(class|data) \approx P(data|class)\times P(class)
+P(distribution|data) \approx P(data|distribution)\times P(class)
 $</center>
 
 
