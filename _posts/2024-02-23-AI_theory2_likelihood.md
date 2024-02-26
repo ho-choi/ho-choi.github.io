@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[AI_theory] Likelihood - 진행중" 
+title: "[AI_theory] Likelihood" 
 categories: AI_Theory
 typora-root-url: ../
 toc: true
@@ -13,23 +13,28 @@ Likelihood 개념을 알기 위해서는 Probability Density Function (PDF)에 �
 
 베이즈 정리를 보면 Likelihood 수식은 아래와 같다. 
 
-<center>$
+<center>
+$
 P(Data|Class)
-$</center>
+$
+</center>
 
+<center>
 or
+</center>
 
-<center>$
+<center>
+$
 P(Evidence|Hypothesis)
-$</center>
+$
+</center>
 
-수식에 대한 표현만 놓고 보면 Class를 알고 있을 때 data의 함수 값이다. 또는, Hypothesis를 알고 있을 때, Evidence의 값이다. 
 
-
+수식에 대한 표현만 놓고 보면 Class를 알고 있을 때 data의 함수 값이다. 또는, Hypothesis를 알고 있을 때, Evidence의 값이다.  우리가 Class / Hypothesis를 알고 있다고 가정하는 것은 분포의 평균값과 표준편차를 아는 것이라고 정의한다. 
 
 예를들어서, 확률변수로는 대한민국 남자 키 150부터 200 이라고 정의하자. 그리고 대한민국 남성 키의 평균은 175, 표준편차는 10이라고 정의해서 그래프를 그리면 아래와 같다. 
 
-```Python
+```python
 x_variable = np.arange(150,200,1)
 x_mean = 175
 x_sigma = 10

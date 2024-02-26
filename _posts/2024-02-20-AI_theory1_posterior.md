@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[AI_theory] Posterior - 진행중" 
+title: "[AI_theory] Posterior" 
 categories: AI_Theory
 typora-root-url: ../
 toc: true

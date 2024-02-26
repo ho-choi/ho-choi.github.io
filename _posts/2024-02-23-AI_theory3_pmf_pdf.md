@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[AI_theory] PMF, PDF - 진행중" 
+title: "[AI_theory] PMF, PDF" 
 categories: AI_Theory
 typora-root-url: ../
 toc: true
