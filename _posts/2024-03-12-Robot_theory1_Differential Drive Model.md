@@ -42,3 +42,31 @@ Radian은 각의 크기를 나타내는 단위 중 하나이다. 정의는 원�
 
 
 
+```python
+def euler_integration(tspan, z0, u):
+    v, omega = u
+    h = tspan[1] - tspan[0]
+    x0, y0, theta0 = z0
+
+    xdot_c = v * math.cos(theta0)
+    ydot_c = v * math.sin(theta0)
+    thetadot = omega
+
+    x1 = x0 + xdot_c * h
+    y1 = y0 + ydot_c * h
+    theta1 = theta0 + thetadot * h
+
+    return [x1, y1, theta1]
+
+```
+
+
+
+위와 같이 euler intergration  함수를 이용해서 로봇의 궤적을 plotting 하면 아래와 같다. 
+
+![differential model_4](/images/2024-03-12-Robot_theory1_Differential Drive Model/differential model_4.png)
+
+
+
+
+
