@@ -142,7 +142,7 @@ for iteration in range(10):
     p_posterior = p_posterior / np.sum(p_posterior)
     
     ## Prior update
-    p_prior = p_posterior
+    p_prior = p_posterior    
 ```
 
 
