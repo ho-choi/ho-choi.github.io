@@ -50,3 +50,7 @@ PDF에서 Density는 확률 / 확률변수 구간의 크기 이다. 여기서 '�
 
 
 
+일반적으로 Continuous RV 관점에서는 $P(x) = \frac{1}{\infty}$ 이다. 따라서 CDF의 개념에서 미분을 통해 PDF를 정의한다. 
+
+ ![pdf_calculate](/images/2024-02-23-AI_theory3_pmf_pdf/pdf_calculate.png)
+

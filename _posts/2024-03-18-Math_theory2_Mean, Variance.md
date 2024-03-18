@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "[Math_theory] 평균, 분산" 
+title: "[Math_theory] 평균과 분산" 
 categories: Math_Theory
 typora-root-url: ../
 toc: true
