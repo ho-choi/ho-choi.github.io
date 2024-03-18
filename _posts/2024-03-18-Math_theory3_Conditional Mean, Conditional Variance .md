@@ -23,4 +23,3 @@ PDF의 개념은 CDF를 미분한 값이라고 정리했었다. [PDF](https://ho
 
 
 
-![conditional_pdf](/images/2024-03-18-Math_theory3_Conditional Mean, Conditional Variance /conditional_pdf-1710742487928-14.png)
