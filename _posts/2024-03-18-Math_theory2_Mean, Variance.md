@@ -31,7 +31,7 @@ Arithmetic Average 이라 불리는 산술적 평균은, 우리가 알고 있는
 
 ![Expectation_continuous](/images/2024-03-18-Math_theory2_Mean, Variance/Expectation_continuous-1710808435839-1.png)
 
-### 선형변환된 확률변수의 평균
+### 선형변환 확률변수의 평균
 
 지금까지는 이산적/연속적 확률변수 X 에 대한  평균을 정의했다. 확률변수 $X$가  $aX + b$ 로 선형변환을 할 경우 평균을 정의하면 아래와 같다. 
 
@@ -83,7 +83,7 @@ Variance 관련 글을 보다 보면, Central Moments 라는 표현을 보게 �
 
 ![variance_second](/images/2024-03-18-Math_theory2_Mean, Variance/variance_second.png)
 
-### 선형화된 확률변수의 분산
+### 선형변환 확률변수의 분산
 
 위에서 분산을 정의한 것 처럼, 확률변수에서 평균을 빼고 이를 제곱한 것의 평균이다. 이처럼 선형변환 한 $aX +b$ 가 확률변수라면 분산은 아래와 같이 정의가 된다. 
 
@@ -99,5 +99,28 @@ Variance 관련 글을 보다 보면, Central Moments 라는 표현을 보게 �
 
 ### 확률 벡터의 분산
 
+확률벡터 $X$ 가 U, W 확률변수로 이뤄져 있을 경우, 분산에 대한 정의는 아래와 같다. 
 
 
+
+![variance_vector](/images/2024-03-18-Math_theory2_Mean, Variance/variance_vector.png)
+
+그러나 확률벡터에서 벡터의 형태가 $2x1$ 이기 때문에 매트릭스 곱을 할 수 가 없다.
+
+![variance_vector_2](/images/2024-03-18-Math_theory2_Mean, Variance/variance_vector_2.png)
+
+따라서, 벡터의 제곱을 위해서 $ (X-E[X])^T$  transpose 하여서 곱해줘야 한다. 곱해준 결과는 $2x2$ Matrix 를 얻을 수 있고 이것을 Covariance Matrix라고 정의한다. 
+
+
+
+![variance_vector_3](/images/2024-03-18-Math_theory2_Mean, Variance/variance_vector_3.png)
+
+### 선형변환 확률 벡터의 분산
+
+
+
+확률 벡터의 선형 변환은 $A\underline{X}$ 라고 정의할 수 있다. 
+
+분산은 $ E[X^2] - \mu^2$ 로 표현할 수 있는 것을 위에서 증명하였다.  해당 식을 이용해서 $A\underline{X}$ 확률 벡터를 대입하면 아래와 같이 정리할 수 있다.  
+
+![variance_vector_4](/images/2024-03-18-Math_theory2_Mean, Variance/variance_vector_4.png)

@@ -20,7 +20,7 @@ Kalman Filter 역시 같은 개념이다. 여기서 Markov Localization과 다�
 
 직관적인 설명을 위해, 로봇의 위치를 추정하는 Kalman Filter의  Pseudo-Code와  결과값을 먼저 살펴보자.
 
-```Python
+```python
 0. initialize
     x_position ## 로봇의 위치를 초기에는 설정을 해줘야한다. 
     P		   ## 로봇의 위치에 대한 초기 covariance 설정한다.
@@ -49,6 +49,7 @@ for t in range(1, 2): ## 센서값이 들어오는 주기 또는 Update 하는 �
         
     4. Return 1
 ```
+
 
 
 
