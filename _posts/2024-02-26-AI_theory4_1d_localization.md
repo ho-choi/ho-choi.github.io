@@ -124,7 +124,7 @@ Likelihood와 Prior의 곱을 통해서 Posterior를 얻을 수 있다. 얻은 P
 
 아래 와 같이 10번의 iteration을 돌게 되면 아래와 같이 로봇의 위치 추정 정확도가 높아지는 것을 확인할 수 있다. 
 
-```Python
+```python
 for iteration in range(10):
     ## Probability of measurement
     P_measure = norm.pdf(z_bin, x_land-x_true, z_sigma)
