@@ -20,11 +20,7 @@ Markov Localization이란, Bayesian 필터를 이용해서 현재 위치를 추�
 P(x|z) \approx P(z|x)\times P(x)
 $</center>
 
-
-
-
-
-
+<span style="color:white">줄띄우기</span>
 
 예를들어, 실제 로봇이 x = 3 위치에 존재한다고 가정했을 때,  센서값 z = 10 얻었다면 로봇이 위치 확률값은 아래와 나올 것이다. 
 
@@ -50,7 +46,7 @@ $</center>
 
 위와 같은 환경일 때, 로봇의 초기 위치는 20 이고,  Landmark의 위치는 80 이라고 해보자. 그러면 아래와 같은 환경에 놓이게 된다. 
 
-![1d_local_size](/images/2024-02-26-AI_theory4_1d_localization/1d_local_size.png)
+![1d_local_size](/images/2024-02-26-AI_theory4_1d_localization/1d_local_size.png){: .align-center}
 
 ### 센서 모델링
 
@@ -70,7 +66,7 @@ P_measure = norm.pdf(z_bin, x_land-x_true, z_sigma)  ## 랜드마크와 로봇 �
 
 
 
-![1d_local_1](/images/2024-02-26-AI_theory4_1d_localization/1d_local_1-1710396181514-2.png)
+![1d_local_1](/images/2024-02-26-AI_theory4_1d_localization/1d_local_1-1710396181514-2.png){: .align-center .img-width-half}
 
 
 
@@ -85,7 +81,7 @@ P_measure = norm.pdf(z_bin, x_land-x_true, z_sigma)  ## 랜드마크와 로봇 �
 - 따라서, 로봇은 20 위치에 존재할 가능성이 높다. 
 - 다만, 센서는 오차가 존재하기 때문에 로봇이 존재하는 위치 역시 오차가 존재한다.
 
-![1d_local_5](/images/2024-02-26-AI_theory4_1d_localization/1d_local_5.png)
+![1d_local_5](/images/2024-02-26-AI_theory4_1d_localization/1d_local_5.png){: .align-center .img-width-half}
 
 
 
@@ -95,7 +91,7 @@ P_measure = norm.pdf(z_bin, x_land-x_true, z_sigma)  ## 랜드마크와 로봇 �
 
 
 
-![1d_uniform](/images/2024-02-26-AI_theory4_1d_localization/1d_uniform.png)
+![1d_uniform](/images/2024-02-26-AI_theory4_1d_localization/1d_uniform.png){: .align-center}
 
 
 
@@ -116,7 +112,7 @@ z_measure = np.random.choice(z_bin, 1, p=P_measure)  ## 측정 확률분포에�
 
 이를 초기 Prior값을 곱하면 변함없는 그래프가 만들어 질것이다.  왜냐하면 Prior를 Uniform으로 정의했기 때문이다.
 
-![1d_local_6](/images/2024-02-26-AI_theory4_1d_localization/1d_local_6.png)
+![1d_local_6](/images/2024-02-26-AI_theory4_1d_localization/1d_local_6.png){: .align-center .img-width-half}
 
 
 
@@ -147,5 +143,5 @@ for iteration in range(10):
 
 
 
-![1d_local_7](/images/2024-02-26-AI_theory4_1d_localization/1d_local_7.png)
+![1d_local_7](/images/2024-02-26-AI_theory4_1d_localization/1d_local_7.png){: .align-center .img-width-half}
 
