@@ -63,7 +63,7 @@ X 축 방향으로 $a$ 만큼 이동한다면 단순히 좌표는 $x+a$ 가 되�
 
 하지만, 이처럼 Rotation과 Translation을 나눠서 계산하게 된다면 연산량 관점에서 효율적이지 못하다.
 
-이를 위해서,  Rotation과 Translation을 한번에 할 수 있는 Homogeneous Transform 방법을 만들었다. 
+이를 위해서,  Rotation과 Translation을 한번에 할 수 있는 Homogeneous Transform 방법을 만들었다.  
 
 
 
