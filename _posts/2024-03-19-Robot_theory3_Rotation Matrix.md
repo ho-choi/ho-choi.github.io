@@ -68,3 +68,61 @@ X 축 방향으로 $a$ 만큼 이동한다면 단순히 좌표는 $x+a$ 가 되�
 
 
 ![rotation matrix_4](/images/2024-03-19-Robot_theory3_Rotation Matrix/rotation matrix_4.png){: .img-width-30 .align-center}
+
+
+
+## 3D Homogeneous Transform
+
+위에서 살펴본 2D Transform을 3D로 확장시켜 보자. 
+
+아래와 같이,  각축의 Rotation Matrix는 아래와 같이 기술 할 수 있다. 
+
+![rotation matrix_5](/images/2024-03-19-Robot_theory3_Rotation Matrix/rotation matrix_5.png)
+
+
+
+여기서, 우리가 주목해야할 부분은, y축 Rotation Matrix는 부호가 반대인 것을 확인할 수 있다. 이는 오른손 법칙을 이용했을 때,  x-y-z 평면에서 y축을 화면 밖으로 올라오는 방향이라고 생각한다면 z-x 평면으로 회전은 마이너스 방향이다. 따라서 Rotation Matrix 부호가 반대가 되는 것이다. 
+
+![rotation matrix_6](/images/2024-03-19-Robot_theory3_Rotation Matrix/rotation matrix_6.png){: .img-width-30 .align-center}
+
+## Forward Kinematics
+
+Forward Kinematics, KF 는 축을 몇도 돌렸을 때, 최종위치는 어디있겠는가 라는 문제이다. 
+
+수식은 아래와 같이 작성할 수 있으며, $\Theta$ 는 벡터로써, 관절 $\theta$ 각의 집합이다.  
+
+$X = FK(\Theta)$
+
+
+
+![FK_1](/images/2024-03-19-Robot_theory3_Rotation Matrix/FK_1.png){: .img-width-30 .align-center}
+
+직렬형 로봇은 FK가 쉽고, 병렬형 로봇은 IK가 쉽다고 알려져 있다. 
+
+FK의 경우 아래와 같이 수식으로 직접 $(x, y)$ 를 계산할 수 있지만, $\theta$가 많아질 경우 계산하기 힘들어진다. 
+
+![FK_2](/images/2024-03-19-Robot_theory3_Rotation Matrix/FK_2.png){: .img-width-half .align-center}
+
+
+
+
+
+이를 해결하기 위해 Homogineous Transform을 이용해서 계산한다. 
+아래와 같이 원점 좌표계에서 빨간색 좌표계로,   빨간색 좌표계에서 파란색 좌표계로 이동하는 개념으로 생각하면 된다. 
+
+
+
+![FK_3](/images/2024-03-19-Robot_theory3_Rotation Matrix/FK_3-1712571791766-6.png){: .img-width-half .align-center}
+
+
+
+
+
+
+
+
+
+## Inverse Kinematics
+
+Inverse Kinematics, IK 는 최종 위치값을 넣으면 관절의 $\theta$ 값을 알아내는 것이다. 
+
