@@ -33,8 +33,6 @@ error: externally-managed-environment
 
 가상환경을 만들려고 했더니 이번엔 또 다른 에러가 났다.
 
-
-
 ```
 python3 -m venv stpa_server
 # The virtual environment was not created successfully because ensurepip is not available.
